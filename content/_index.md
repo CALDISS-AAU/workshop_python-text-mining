@@ -1,5 +1,1 @@
-# I DID IT
-
-
-
-Or did I?!
+# Introduktion til 'Text Mining' i Python

@@ -1,11 +1,11 @@
 baseURL = ""
 languageCode = "en-us"
-title = "CALDISS Workshop Template"
+title = "Introduktion til 'Text Mining' i Python"
 themesDir = "themes"
 theme = "hugo-theme-learn"
 relativeurls = true
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-github'></i> Github repo"
-url = "https://github.com/caldissKjelmann/workshop_template"
+url = "https://github.com/CALDISS-AAU/workshop_python-text-mining"
 
