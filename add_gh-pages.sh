@@ -6,6 +6,12 @@ then
     exit 1;
 fi
 
+git checkout --orphan gh-pages
+git reset --hard
+git commit --allow-empty -m "Initializing gh-pages branch"
+git push upstream gh-pages
+git checkout master
+
 echo "Deleting old publication"
 rm -rf public
 mkdir public
@@ -14,15 +20,3 @@ rm -rf .git/worktrees/public/
 
 echo "Checking out gh-pages branch into public"
 git worktree add -B gh-pages public upstream/gh-pages
-
-echo "Removing existing files"
-rm -rf public/*
-
-echo "Generating site"
-hugo
-
-echo "Updating gh-pages branch"
-cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
-
-#echo "Pushing to github"
-#git push --all
