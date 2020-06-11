@@ -1,6 +1,6 @@
 baseURL = ""
 languageCode = "en-us"
-title = "Introduktion til 'Text Mining' i Python"
+title = "Introduktion til Text Mining i Python"
 themesDir = "themes"
 theme = "hugo-theme-learn"
 relativeurls = true
