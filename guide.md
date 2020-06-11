@@ -53,15 +53,15 @@ Hvis der skal merges med eksisterende repo:
 
 
 
-Kopier `add_gh-pages.sh` ud af repo og fjern
+Kopier `deploy_gh-pages.sh` ud af repo og fjern
 
-`git rm add_gh-pages.sh`
+`git rm deploy_gh-pages.sh`
 
 
 
-Tilføj `add_gh-pages.sh` til `.gitignore`
+Tilføj `deploy_gh-pages.sh` til `.gitignore`
 
-`echo "add_gh-pages.sh" >> .gitignore`
+`echo "deploy_gh-pages.sh" >> .gitignore`
 
 (add og commit)
 
@@ -87,7 +87,13 @@ https://jmalarcon.github.io/markdowntables/
 
 Opdater `config.toml`
 
-- Main URL skal svare til GitHub Pages URL
+- baseURL skal være tom
+
+
+
+Opdater layouts/partials/logo.html:
+
+- `href = "/[workshop-navn]"`
 
 
 
@@ -95,7 +101,7 @@ Skub ændringer til master
 
 
 
-Kopier deploy script tilbage igen og kør (Opret `gh-pages` branch som deployment branch (`add_gh-pages.sh`) )
+Kopier deploy script tilbage igen og kør (Opret `gh-pages` branch som deployment branch (`deploy_gh-pages.sh`) )
 
 https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-of-project-pages-from-your-gh-pages-branch
 
